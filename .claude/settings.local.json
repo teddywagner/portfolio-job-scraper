@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c:*)",
+      "Bash(bun:*)",
+      "WebFetch(domain:api.ashbyhq.com)",
+      "WebFetch(domain:boards-api.greenhouse.io)",
+      "WebFetch(domain:api.lever.co)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:www.ycombinator.com)",
+      "WebFetch(domain:jobs.polymer.co)",
+      "WebFetch(domain:wearlinq.breezy.hr)",
+      "WebFetch(domain:docs.firecrawl.dev)",
+      "WebFetch(domain:docs.sheetjs.com)"
+    ]
+  }
+}

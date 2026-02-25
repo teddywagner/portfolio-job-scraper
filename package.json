@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-job-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "@mendable/firecrawl-js": "^1.15.0",
+    "@supabase/supabase-js": "^2.97.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.7.0"
+  }
+}
