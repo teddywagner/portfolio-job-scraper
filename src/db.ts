@@ -131,7 +131,7 @@ export async function markRemovedJobs(
     const batch = toRemove.slice(i, i + BATCH_SIZE);
     const { error } = await supabase
       .from("jobs")
-      .update({ status: "Removed" })
+      .update({ status: "Removed", removed_at: new Date().toISOString() })
       .in("id", batch);
 
     if (error) {
