@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-03-03T17-51-49-709Z",
+  "results": [
+    {
+      "company": "BrowserOS",
+      "jobs": [],
+      "scrapedAt": "2026-03-03T17:51:49.709Z",
+      "source": "firecrawl",
+      "error": "FIRECRAWL_API_KEY not set — skipping Firecrawl scrape",
+      "portfolioId": 35
+    },
+    {
+      "company": "Bucket Robotics",
+      "jobs": [],
+      "scrapedAt": "2026-03-03T17:51:49.709Z",
+      "source": "firecrawl",
+      "error": "FIRECRAWL_API_KEY not set — skipping Firecrawl scrape",
+      "portfolioId": 2
+    },
+    {
+      "company": "Colleva",
+      "jobs": [],
+      "scrapedAt": "2026-03-03T17:51:49.709Z",
+      "source": "firecrawl",
+      "error": "FIRECRAWL_API_KEY not set — skipping Firecrawl scrape",
+      "portfolioId": 4
+    },
+    {
+      "company": "Merlin AI",
+      "jobs": [],
+      "scrapedAt": "2026-03-03T17:51:49.709Z",
+      "source": "firecrawl",
+      "error": "FIRECRAWL_API_KEY not set — skipping Firecrawl scrape",
+      "portfolioId": 11
+    },
+    {
+      "company": "Profitmind",
+      "jobs": [],
+      "scrapedAt": "2026-03-03T17:51:49.709Z",
+      "source": "firecrawl",
+      "error": "FIRECRAWL_API_KEY not set — skipping Firecrawl scrape",
+      "portfolioId": 12
+    },
+    {
+      "company": "Reflexivity",
+      "jobs": [],
+      "scrapedAt": "2026-03-03T17:51:49.709Z",
+      "source": "firecrawl",
+      "error": "FIRECRAWL_API_KEY not set — skipping Firecrawl scrape",
+      "portfolioId": 14
+    },
+    {
+      "company": "Synthefy",
+      "jobs": [],
+      "scrapedAt": "2026-03-03T17:51:49.709Z",
+      "source": "firecrawl",
+      "error": "FIRECRAWL_API_KEY not set — skipping Firecrawl scrape",
+      "portfolioId": 19
+    },
+    {
+      "company": "WearLinq",
+      "jobs": [],
+      "scrapedAt": "2026-03-03T17:51:49.709Z",
+      "source": "firecrawl",
+      "error": "FIRECRAWL_API_KEY not set — skipping Firecrawl scrape",
+      "portfolioId": 28
+    },
+    {
+      "company": "IronGrid",
+      "jobs": [],
+      "scrapedAt": "2026-03-03T17:51:49.709Z",
+      "source": "firecrawl",
+      "error": "FIRECRAWL_API_KEY not set — skipping Firecrawl scrape",
+      "portfolioId": 34
+    }
+  ],
+  "allJobs": []
+}
