@@ -14,20 +14,35 @@ export function getSupabaseClient(): SupabaseClient {
   return client;
 }
 
-/** Fetch portfolio table and return Map<lowercase company name, id> */
-export async function getPortfolioMap(): Promise<Map<string, number>> {
+export interface JobSource {
+  portfolioId: number;
+  company: string;
+  jobsLink: string;
+  hasApi: boolean;
+}
+
+/** Fetch active job sources from portfolio_job_source, optionally filtered by mode */
+export async function getJobSources(
+  mode?: "free" | "firecrawl"
+): Promise<JobSource[]> {
   const supabase = getSupabaseClient();
-  const { data, error } = await supabase
-    .from("portfolio")
-    .select("id, name");
+  let query = supabase
+    .from("portfolio_job_source")
+    .select("portfolio_id, jobs_link, has_api, portfolio(name)")
+    .eq("is_active", true);
 
-  if (error) throw new Error(`Failed to fetch portfolio: ${error.message}`);
+  if (mode === "free") query = query.eq("has_api", true);
+  else if (mode === "firecrawl") query = query.eq("has_api", false);
 
-  const map = new Map<string, number>();
-  for (const row of data ?? []) {
-    map.set(String(row.name).toLowerCase(), row.id);
-  }
-  return map;
+  const { data, error } = await query;
+  if (error) throw new Error(`Failed to fetch job sources: ${error.message}`);
+
+  return (data ?? []).map((row: any) => ({
+    portfolioId: row.portfolio_id,
+    company: row.portfolio.name,
+    jobsLink: row.jobs_link,
+    hasApi: row.has_api,
+  }));
 }
 
 /** Upsert scraped jobs for a given portfolio company */

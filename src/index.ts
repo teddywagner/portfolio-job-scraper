@@ -1,8 +1,7 @@
-import { readInputExcel } from "./excel";
 import { getConfig } from "./config";
 import { getScraperForUrl } from "./scrapers";
 import { saveSnapshot } from "./snapshot";
-import { getPortfolioMap, upsertJobs, markRemovedJobs } from "./db";
+import { getJobSources, upsertJobs, markRemovedJobs } from "./db";
 import type { ScrapeResult } from "./scrapers/types";
 
 async function main() {
@@ -12,29 +11,27 @@ async function main() {
 
   console.log("=== Portfolio Job Scraper ===\n");
 
-  // 1. Read input
-  console.log(`Reading ${config.inputFile}...`);
-  const companies = readInputExcel(config.inputFile);
-  const withLink = companies.filter((c) => c.jobsLink);
-  const withoutLink = companies.filter((c) => !c.jobsLink);
-  console.log(`  ${withLink.length} companies with job links`);
-  console.log(`  ${withoutLink.length} companies without job links\n`);
+  // 1. Load job sources from Supabase
+  const scraperMode = process.env.SCRAPER_MODE as
+    | "free"
+    | "firecrawl"
+    | undefined;
+  if (scraperMode) console.log(`  Mode: ${scraperMode}`);
 
-  // 2. Load portfolio map from Supabase
-  console.log("Loading portfolio map from Supabase...");
-  const portfolioMap = await getPortfolioMap();
-  console.log(`  ${portfolioMap.size} portfolio companies loaded\n`);
+  console.log("Loading job sources from Supabase...");
+  const sources = await getJobSources(scraperMode);
+  console.log(`  ${sources.length} sources to scrape\n`);
 
-  // 3. Scrape
-  const results: ScrapeResult[] = [];
+  // 2. Scrape
+  const results: (ScrapeResult & { portfolioId: number })[] = [];
 
-  for (const entry of withLink) {
-    const scraper = getScraperForUrl(entry.jobsLink!);
-    process.stdout.write(`  ${entry.company} (${scraper.name})...`);
+  for (const source of sources) {
+    const scraper = getScraperForUrl(source.jobsLink);
+    process.stdout.write(`  ${source.company} (${scraper.name})...`);
 
     try {
-      const result = await scraper.scrape(entry.company, entry.jobsLink!);
-      results.push(result);
+      const result = await scraper.scrape(source.company, source.jobsLink);
+      results.push({ ...result, portfolioId: source.portfolioId });
 
       if (result.error) {
         console.log(` WARN: ${result.error}`);
@@ -45,49 +42,35 @@ async function main() {
       const msg = err instanceof Error ? err.message : String(err);
       console.log(` ERROR: ${msg}`);
       results.push({
-        company: entry.company,
+        company: source.company,
         jobs: [],
         scrapedAt: new Date().toISOString(),
         source: "error",
         error: msg,
+        portfolioId: source.portfolioId,
       });
     }
   }
 
   console.log();
 
-  // 4. Save snapshot (local backup)
+  // 3. Save snapshot (local backup)
   saveSnapshot(config.snapshotDir, results);
 
-  // 5. Upsert to DB, grouped by company
+  // 4. Upsert to DB
   console.log("\n  Syncing to database...");
-  const resultsByCompany = new Map<string, ScrapeResult[]>();
-  for (const result of results) {
-    if (result.error || result.jobs.length === 0) continue;
-    const existing = resultsByCompany.get(result.company) ?? [];
-    existing.push(result);
-    resultsByCompany.set(result.company, existing);
-  }
-
   let totalUpserted = 0;
   let totalRemoved = 0;
 
-  for (const [company, companyResults] of resultsByCompany) {
-    const portfolioId = portfolioMap.get(company.toLowerCase());
-    if (!portfolioId) {
-      console.log(`    WARN: "${company}" not found in portfolio table — skipping`);
-      continue;
-    }
+  for (const result of results) {
+    if (result.error || result.jobs.length === 0) continue;
 
-    for (const result of companyResults) {
-      const externalIds = result.jobs.map((j) => j.externalId);
+    const externalIds = result.jobs.map((j) => j.externalId);
+    await upsertJobs(result.portfolioId, result.jobs, result.source, runTimestamp);
+    totalUpserted += result.jobs.length;
 
-      await upsertJobs(portfolioId, result.jobs, result.source, runTimestamp);
-      totalUpserted += result.jobs.length;
-
-      const removed = await markRemovedJobs(portfolioId, result.source, externalIds);
-      totalRemoved += removed;
-    }
+    const removed = await markRemovedJobs(result.portfolioId, result.source, externalIds);
+    totalRemoved += removed;
   }
 
   console.log(`    Upserted: ${totalUpserted} jobs`);

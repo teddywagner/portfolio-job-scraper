@@ -11,7 +11,8 @@
       "WebFetch(domain:jobs.polymer.co)",
       "WebFetch(domain:wearlinq.breezy.hr)",
       "WebFetch(domain:docs.firecrawl.dev)",
-      "WebFetch(domain:docs.sheetjs.com)"
+      "WebFetch(domain:docs.sheetjs.com)",
+      "Bash(python3:*)"
     ]
   }
 }

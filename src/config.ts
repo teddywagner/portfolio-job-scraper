@@ -1,8 +1,3 @@
-export interface CompanyEntry {
-  company: string;
-  jobsLink: string | null;
-}
-
 export function getConfig() {
   return {
     firecrawlApiKey: process.env.FIRECRAWL_API_KEY ?? "",
@@ -10,6 +5,5 @@ export function getConfig() {
     supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY ?? "",
     snapshotDir: "data/snapshots",
     outputDir: "data/output",
-    inputFile: "portco-job-listings.xlsx",
   };
 }

@@ -43,7 +43,7 @@ export const firecrawlScraper: Scraper = {
         extract: {
           schema: JobListSchema,
           prompt:
-            "Extract all job listings from this page. For each job, get the title, the direct URL to the job posting (use absolute URLs), and the location.",
+            `Extract only job listings for "${company}" from this page. For each job, get the title, the exact href URL to the job posting (use the full absolute URL exactly as it appears in the page — do not modify or shorten it), and the location. Only include jobs that belong to "${company}".`,
         },
       });
 
@@ -63,10 +63,14 @@ export const firecrawlScraper: Scraper = {
       const baseUrl = new URL(url);
       const jobs: Job[] = (extracted.jobs ?? []).map((j) => {
         let jobUrl = j.url;
-        try {
-          jobUrl = new URL(j.url, baseUrl.origin).href;
-        } catch {
-          // keep as-is if URL parsing fails
+        if (jobUrl.startsWith("mailto:")) {
+          jobUrl = url; // fall back to the company careers page
+        } else {
+          try {
+            jobUrl = new URL(j.url, baseUrl.origin).href;
+          } catch {
+            // keep as-is if URL parsing fails
+          }
         }
         return {
           company,

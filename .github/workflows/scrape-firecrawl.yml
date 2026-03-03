@@ -1,0 +1,42 @@
+name: "Scrape Jobs: Firecrawl Sources"
+
+on:
+  schedule:
+    - cron: "0 8 1,15 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.3.9"
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Run scraper (Firecrawl sources)
+        run: bun run scrape:firecrawl
+        env:
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "chore: update job snapshot $(date -u +%Y-%m-%d) [firecrawl]"
+          git pull --rebase
+          git push

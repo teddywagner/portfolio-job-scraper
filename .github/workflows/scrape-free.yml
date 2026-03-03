@@ -1,9 +1,9 @@
-name: Scrape Jobs
+name: "Scrape Jobs: Free Sources"
 
 on:
   schedule:
-    - cron: "0 8 1,15 * *" # 1st and 15th of each month at 8 AM UTC
-  workflow_dispatch: {} # Manual trigger
+    - cron: "0 8 * * *"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -22,10 +25,9 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Run scraper
-        run: bun run scrape
+      - name: Run scraper (free sources)
+        run: bun run scrape:free
         env:
-          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
 
@@ -34,5 +36,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "chore: update job snapshot $(date -u +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "chore: update job snapshot $(date -u +%Y-%m-%d) [free]"
+          git pull --rebase
           git push
