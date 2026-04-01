@@ -1,0 +1,437 @@
+{
+  "timestamp": "2026-04-01T08-26-41-292Z",
+  "results": [
+    {
+      "company": "BrowserOS",
+      "jobs": [
+        {
+          "company": "BrowserOS",
+          "title": "ML Research Engineer Intern",
+          "url": "https://www.ycombinator.com/companies/browseros/jobs/XFrdIN5-ml-research-engineer-intern",
+          "location": "San Francisco, CA, US",
+          "externalId": "https://www.ycombinator.com/companies/browseros/jobs/XFrdIN5-ml-research-engineer-intern"
+        }
+      ],
+      "scrapedAt": "2026-04-01T08:25:45.248Z",
+      "source": "firecrawl",
+      "portfolioId": 35
+    },
+    {
+      "company": "Bucket Robotics",
+      "jobs": [
+        {
+          "company": "Bucket Robotics",
+          "title": "Forward Deploy Engineer",
+          "url": "https://www.ycombinator.com/companies/bucket-robotics/jobs/vkZKgmP-forward-deploy-engineer",
+          "location": "San Francisco, CA, US / Atlanta, GA, US",
+          "externalId": "https://www.ycombinator.com/companies/bucket-robotics/jobs/vkZKgmP-forward-deploy-engineer"
+        },
+        {
+          "company": "Bucket Robotics",
+          "title": "ML Engineer",
+          "url": "https://www.ycombinator.com/companies/bucket-robotics/jobs/wamcLUR-ml-engineer",
+          "location": "San Francisco, CA, US",
+          "externalId": "https://www.ycombinator.com/companies/bucket-robotics/jobs/wamcLUR-ml-engineer"
+        }
+      ],
+      "scrapedAt": "2026-04-01T08:25:50.513Z",
+      "source": "firecrawl",
+      "portfolioId": 2
+    },
+    {
+      "company": "Colleva",
+      "jobs": [
+        {
+          "company": "Colleva",
+          "title": "Open Role",
+          "url": "https://jobs.polymer.co/colleva/31101",
+          "location": "Greenwich, CT",
+          "externalId": "https://jobs.polymer.co/colleva/31101"
+        }
+      ],
+      "scrapedAt": "2026-04-01T08:25:55.747Z",
+      "source": "firecrawl",
+      "portfolioId": 4
+    },
+    {
+      "company": "Merlin AI",
+      "jobs": [
+        {
+          "company": "Merlin AI",
+          "title": "Product Engineer (Customer-Facing)",
+          "url": "https://www.ycombinator.com/companies/merlin-ai/jobs/BIHU5Bd-product-engineer-customer-facing",
+          "location": "Bengaluru, KA, IN / Bengaluru, Karnataka, IN",
+          "externalId": "https://www.ycombinator.com/companies/merlin-ai/jobs/BIHU5Bd-product-engineer-customer-facing"
+        }
+      ],
+      "scrapedAt": "2026-04-01T08:26:01.693Z",
+      "source": "firecrawl",
+      "portfolioId": 11
+    },
+    {
+      "company": "Profitmind",
+      "jobs": [
+        {
+          "company": "Profitmind",
+          "title": "Senior Machine Learning Engineer - Optimization & Insights (Retail)",
+          "url": "https://www.linkedin.com/jobs/view/senior-machine-learning-engineer-optimization-insights-retail-at-profitmind-4368789158",
+          "location": "Remote, Hybrid Pittsburgh, PA",
+          "externalId": "https://www.linkedin.com/jobs/view/senior-machine-learning-engineer-optimization-insights-retail-at-profitmind-4368789158"
+        },
+        {
+          "company": "Profitmind",
+          "title": "Full-Stack / Frontend Software Engineer",
+          "url": "https://www.linkedin.com/jobs/view/full-stack-frontend-software-engineer-at-profitmind-4369811917",
+          "location": "Pittsburgh, Pennsylvania, United States",
+          "externalId": "https://www.linkedin.com/jobs/view/full-stack-frontend-software-engineer-at-profitmind-4369811917"
+        },
+        {
+          "company": "Profitmind",
+          "title": "Head of Engineering",
+          "url": "https://www.linkedin.com/jobs/view/head-of-engineering-at-profitmind-4369545685",
+          "location": "Pittsburgh, Pennsylvania, United States",
+          "externalId": "https://www.linkedin.com/jobs/view/head-of-engineering-at-profitmind-4369545685"
+        },
+        {
+          "company": "Profitmind",
+          "title": "Senior AI Agentic Engineer",
+          "url": "https://www.linkedin.com/jobs/view/senior-ai-agentic-engineer-at-profitmind-4368790049",
+          "location": "Remote, Hybrid Pittsburgh, PA",
+          "externalId": "https://www.linkedin.com/jobs/view/senior-ai-agentic-engineer-at-profitmind-4368790049"
+        },
+        {
+          "company": "Profitmind",
+          "title": "Senior Data Engineer",
+          "url": "https://www.linkedin.com/jobs/view/senior-data-engineer-at-profitmind-4369558474",
+          "location": "Pittsburgh, Pennsylvania, United States",
+          "externalId": "https://www.linkedin.com/jobs/view/senior-data-engineer-at-profitmind-4369558474"
+        }
+      ],
+      "scrapedAt": "2026-04-01T08:26:10.084Z",
+      "source": "firecrawl",
+      "portfolioId": 12
+    },
+    {
+      "company": "Reflexivity",
+      "jobs": [
+        {
+          "company": "Reflexivity",
+          "title": "Machine Learning and AI Engineer - London",
+          "url": "https://reflexivity.firststage.co/jobs/wq3d4SmP2d/view?layout=list",
+          "location": "London",
+          "externalId": "https://reflexivity.firststage.co/jobs/wq3d4SmP2d/view?layout=list"
+        },
+        {
+          "company": "Reflexivity",
+          "title": "Machine Learning and Quant Engineer - London",
+          "url": "https://reflexivity.firststage.co/jobs/mvHQDQWnPa/view?layout=list",
+          "location": "London",
+          "externalId": "https://reflexivity.firststage.co/jobs/mvHQDQWnPa/view?layout=list"
+        },
+        {
+          "company": "Reflexivity",
+          "title": "Machine Learning and AI Engineer - New York",
+          "url": "https://reflexivity.firststage.co/jobs/k1OdmDtTuo/view?layout=list",
+          "location": "New York",
+          "externalId": "https://reflexivity.firststage.co/jobs/k1OdmDtTuo/view?layout=list"
+        }
+      ],
+      "scrapedAt": "2026-04-01T08:26:16.864Z",
+      "source": "firecrawl",
+      "portfolioId": 14
+    },
+    {
+      "company": "Synthefy",
+      "jobs": [
+        {
+          "company": "Synthefy",
+          "title": "Founding Product Manager",
+          "url": "https://www.synthefy.com/careers",
+          "location": "San Francisco Bay Area, CA",
+          "externalId": "https://www.synthefy.com/careers"
+        },
+        {
+          "company": "Synthefy",
+          "title": "Founding Machine Learning Engineer",
+          "url": "https://www.synthefy.com/careers",
+          "location": "San Francisco Bay Area, CA",
+          "externalId": "https://www.synthefy.com/careers"
+        }
+      ],
+      "scrapedAt": "2026-04-01T08:26:22.480Z",
+      "source": "firecrawl",
+      "portfolioId": 19
+    },
+    {
+      "company": "WearLinq",
+      "jobs": [
+        {
+          "company": "WearLinq",
+          "title": "Cardiac/Telemetry Technician",
+          "url": "https://wearlinq.breezy.hr/p/b69ad5342661-cardiac-telemetry-technician",
+          "location": "Rockville, MD",
+          "externalId": "https://wearlinq.breezy.hr/p/b69ad5342661-cardiac-telemetry-technician"
+        },
+        {
+          "company": "WearLinq",
+          "title": "Holter/Cardiac Technologist",
+          "url": "https://wearlinq.breezy.hr/p/cb18c53d8452-holter-cardiac-technologist",
+          "location": "Rockville, MD",
+          "externalId": "https://wearlinq.breezy.hr/p/cb18c53d8452-holter-cardiac-technologist"
+        },
+        {
+          "company": "WearLinq",
+          "title": "Inventory / Shipping Specialist",
+          "url": "https://wearlinq.breezy.hr/p/0e73b465e0d9-inventory-shipping-specialist",
+          "location": "Rockville, MD",
+          "externalId": "https://wearlinq.breezy.hr/p/0e73b465e0d9-inventory-shipping-specialist"
+        },
+        {
+          "company": "WearLinq",
+          "title": "Shipping & Logistics Associate",
+          "url": "https://wearlinq.breezy.hr/p/d83bc94675f2-shipping-logistics-associate",
+          "location": "Rockville, MD",
+          "externalId": "https://wearlinq.breezy.hr/p/d83bc94675f2-shipping-logistics-associate"
+        },
+        {
+          "company": "WearLinq",
+          "title": "Shipping & Logistics Manager",
+          "url": "https://wearlinq.breezy.hr/p/82191aeee2ef-shipping-logistics-manager",
+          "location": "Rockville, MD",
+          "externalId": "https://wearlinq.breezy.hr/p/82191aeee2ef-shipping-logistics-manager"
+        },
+        {
+          "company": "WearLinq",
+          "title": "Medical Billing Associate",
+          "url": "https://wearlinq.breezy.hr/p/cba93a090ab7-medical-billing-associate",
+          "location": "Rockville, US",
+          "externalId": "https://wearlinq.breezy.hr/p/cba93a090ab7-medical-billing-associate"
+        },
+        {
+          "company": "WearLinq",
+          "title": "Senior Accounting Manager",
+          "url": "https://wearlinq.breezy.hr/p/b7e6e379a0b3-senior-accounting-manager",
+          "location": "San Jose, CA",
+          "externalId": "https://wearlinq.breezy.hr/p/b7e6e379a0b3-senior-accounting-manager"
+        },
+        {
+          "company": "WearLinq",
+          "title": "Business Development Manager",
+          "url": "https://wearlinq.breezy.hr/p/4928c237a9bf-business-development-manager",
+          "location": "United States",
+          "externalId": "https://wearlinq.breezy.hr/p/4928c237a9bf-business-development-manager"
+        }
+      ],
+      "scrapedAt": "2026-04-01T08:26:31.802Z",
+      "source": "firecrawl",
+      "portfolioId": 28
+    },
+    {
+      "company": "IronGrid",
+      "jobs": [
+        {
+          "company": "IronGrid",
+          "title": "Manufacturing Underwriter / Senior Underwriter",
+          "url": "https://www.getirongrid.com/careers/underwriter",
+          "location": "San Francisco, CA",
+          "externalId": "https://www.getirongrid.com/careers/underwriter"
+        }
+      ],
+      "scrapedAt": "2026-04-01T08:26:35.537Z",
+      "source": "firecrawl",
+      "portfolioId": 34
+    },
+    {
+      "company": "Limina",
+      "jobs": [
+        {
+          "company": "Limina",
+          "title": "Senior Enterprise Account Executive",
+          "url": "https://privateai.bamboohr.com/careers/35",
+          "location": "Toronto, Ontario (Remote)",
+          "externalId": "https://privateai.bamboohr.com/careers/35"
+        }
+      ],
+      "scrapedAt": "2026-04-01T08:26:41.291Z",
+      "source": "firecrawl",
+      "portfolioId": 13
+    }
+  ],
+  "allJobs": [
+    {
+      "company": "BrowserOS",
+      "title": "ML Research Engineer Intern",
+      "url": "https://www.ycombinator.com/companies/browseros/jobs/XFrdIN5-ml-research-engineer-intern",
+      "location": "San Francisco, CA, US",
+      "externalId": "https://www.ycombinator.com/companies/browseros/jobs/XFrdIN5-ml-research-engineer-intern"
+    },
+    {
+      "company": "Bucket Robotics",
+      "title": "Forward Deploy Engineer",
+      "url": "https://www.ycombinator.com/companies/bucket-robotics/jobs/vkZKgmP-forward-deploy-engineer",
+      "location": "San Francisco, CA, US / Atlanta, GA, US",
+      "externalId": "https://www.ycombinator.com/companies/bucket-robotics/jobs/vkZKgmP-forward-deploy-engineer"
+    },
+    {
+      "company": "Bucket Robotics",
+      "title": "ML Engineer",
+      "url": "https://www.ycombinator.com/companies/bucket-robotics/jobs/wamcLUR-ml-engineer",
+      "location": "San Francisco, CA, US",
+      "externalId": "https://www.ycombinator.com/companies/bucket-robotics/jobs/wamcLUR-ml-engineer"
+    },
+    {
+      "company": "Colleva",
+      "title": "Open Role",
+      "url": "https://jobs.polymer.co/colleva/31101",
+      "location": "Greenwich, CT",
+      "externalId": "https://jobs.polymer.co/colleva/31101"
+    },
+    {
+      "company": "Merlin AI",
+      "title": "Product Engineer (Customer-Facing)",
+      "url": "https://www.ycombinator.com/companies/merlin-ai/jobs/BIHU5Bd-product-engineer-customer-facing",
+      "location": "Bengaluru, KA, IN / Bengaluru, Karnataka, IN",
+      "externalId": "https://www.ycombinator.com/companies/merlin-ai/jobs/BIHU5Bd-product-engineer-customer-facing"
+    },
+    {
+      "company": "Profitmind",
+      "title": "Senior Machine Learning Engineer - Optimization & Insights (Retail)",
+      "url": "https://www.linkedin.com/jobs/view/senior-machine-learning-engineer-optimization-insights-retail-at-profitmind-4368789158",
+      "location": "Remote, Hybrid Pittsburgh, PA",
+      "externalId": "https://www.linkedin.com/jobs/view/senior-machine-learning-engineer-optimization-insights-retail-at-profitmind-4368789158"
+    },
+    {
+      "company": "Profitmind",
+      "title": "Full-Stack / Frontend Software Engineer",
+      "url": "https://www.linkedin.com/jobs/view/full-stack-frontend-software-engineer-at-profitmind-4369811917",
+      "location": "Pittsburgh, Pennsylvania, United States",
+      "externalId": "https://www.linkedin.com/jobs/view/full-stack-frontend-software-engineer-at-profitmind-4369811917"
+    },
+    {
+      "company": "Profitmind",
+      "title": "Head of Engineering",
+      "url": "https://www.linkedin.com/jobs/view/head-of-engineering-at-profitmind-4369545685",
+      "location": "Pittsburgh, Pennsylvania, United States",
+      "externalId": "https://www.linkedin.com/jobs/view/head-of-engineering-at-profitmind-4369545685"
+    },
+    {
+      "company": "Profitmind",
+      "title": "Senior AI Agentic Engineer",
+      "url": "https://www.linkedin.com/jobs/view/senior-ai-agentic-engineer-at-profitmind-4368790049",
+      "location": "Remote, Hybrid Pittsburgh, PA",
+      "externalId": "https://www.linkedin.com/jobs/view/senior-ai-agentic-engineer-at-profitmind-4368790049"
+    },
+    {
+      "company": "Profitmind",
+      "title": "Senior Data Engineer",
+      "url": "https://www.linkedin.com/jobs/view/senior-data-engineer-at-profitmind-4369558474",
+      "location": "Pittsburgh, Pennsylvania, United States",
+      "externalId": "https://www.linkedin.com/jobs/view/senior-data-engineer-at-profitmind-4369558474"
+    },
+    {
+      "company": "Reflexivity",
+      "title": "Machine Learning and AI Engineer - London",
+      "url": "https://reflexivity.firststage.co/jobs/wq3d4SmP2d/view?layout=list",
+      "location": "London",
+      "externalId": "https://reflexivity.firststage.co/jobs/wq3d4SmP2d/view?layout=list"
+    },
+    {
+      "company": "Reflexivity",
+      "title": "Machine Learning and Quant Engineer - London",
+      "url": "https://reflexivity.firststage.co/jobs/mvHQDQWnPa/view?layout=list",
+      "location": "London",
+      "externalId": "https://reflexivity.firststage.co/jobs/mvHQDQWnPa/view?layout=list"
+    },
+    {
+      "company": "Reflexivity",
+      "title": "Machine Learning and AI Engineer - New York",
+      "url": "https://reflexivity.firststage.co/jobs/k1OdmDtTuo/view?layout=list",
+      "location": "New York",
+      "externalId": "https://reflexivity.firststage.co/jobs/k1OdmDtTuo/view?layout=list"
+    },
+    {
+      "company": "Synthefy",
+      "title": "Founding Product Manager",
+      "url": "https://www.synthefy.com/careers",
+      "location": "San Francisco Bay Area, CA",
+      "externalId": "https://www.synthefy.com/careers"
+    },
+    {
+      "company": "Synthefy",
+      "title": "Founding Machine Learning Engineer",
+      "url": "https://www.synthefy.com/careers",
+      "location": "San Francisco Bay Area, CA",
+      "externalId": "https://www.synthefy.com/careers"
+    },
+    {
+      "company": "WearLinq",
+      "title": "Cardiac/Telemetry Technician",
+      "url": "https://wearlinq.breezy.hr/p/b69ad5342661-cardiac-telemetry-technician",
+      "location": "Rockville, MD",
+      "externalId": "https://wearlinq.breezy.hr/p/b69ad5342661-cardiac-telemetry-technician"
+    },
+    {
+      "company": "WearLinq",
+      "title": "Holter/Cardiac Technologist",
+      "url": "https://wearlinq.breezy.hr/p/cb18c53d8452-holter-cardiac-technologist",
+      "location": "Rockville, MD",
+      "externalId": "https://wearlinq.breezy.hr/p/cb18c53d8452-holter-cardiac-technologist"
+    },
+    {
+      "company": "WearLinq",
+      "title": "Inventory / Shipping Specialist",
+      "url": "https://wearlinq.breezy.hr/p/0e73b465e0d9-inventory-shipping-specialist",
+      "location": "Rockville, MD",
+      "externalId": "https://wearlinq.breezy.hr/p/0e73b465e0d9-inventory-shipping-specialist"
+    },
+    {
+      "company": "WearLinq",
+      "title": "Shipping & Logistics Associate",
+      "url": "https://wearlinq.breezy.hr/p/d83bc94675f2-shipping-logistics-associate",
+      "location": "Rockville, MD",
+      "externalId": "https://wearlinq.breezy.hr/p/d83bc94675f2-shipping-logistics-associate"
+    },
+    {
+      "company": "WearLinq",
+      "title": "Shipping & Logistics Manager",
+      "url": "https://wearlinq.breezy.hr/p/82191aeee2ef-shipping-logistics-manager",
+      "location": "Rockville, MD",
+      "externalId": "https://wearlinq.breezy.hr/p/82191aeee2ef-shipping-logistics-manager"
+    },
+    {
+      "company": "WearLinq",
+      "title": "Medical Billing Associate",
+      "url": "https://wearlinq.breezy.hr/p/cba93a090ab7-medical-billing-associate",
+      "location": "Rockville, US",
+      "externalId": "https://wearlinq.breezy.hr/p/cba93a090ab7-medical-billing-associate"
+    },
+    {
+      "company": "WearLinq",
+      "title": "Senior Accounting Manager",
+      "url": "https://wearlinq.breezy.hr/p/b7e6e379a0b3-senior-accounting-manager",
+      "location": "San Jose, CA",
+      "externalId": "https://wearlinq.breezy.hr/p/b7e6e379a0b3-senior-accounting-manager"
+    },
+    {
+      "company": "WearLinq",
+      "title": "Business Development Manager",
+      "url": "https://wearlinq.breezy.hr/p/4928c237a9bf-business-development-manager",
+      "location": "United States",
+      "externalId": "https://wearlinq.breezy.hr/p/4928c237a9bf-business-development-manager"
+    },
+    {
+      "company": "IronGrid",
+      "title": "Manufacturing Underwriter / Senior Underwriter",
+      "url": "https://www.getirongrid.com/careers/underwriter",
+      "location": "San Francisco, CA",
+      "externalId": "https://www.getirongrid.com/careers/underwriter"
+    },
+    {
+      "company": "Limina",
+      "title": "Senior Enterprise Account Executive",
+      "url": "https://privateai.bamboohr.com/careers/35",
+      "location": "Toronto, Ontario (Remote)",
+      "externalId": "https://privateai.bamboohr.com/careers/35"
+    }
+  ]
+}
